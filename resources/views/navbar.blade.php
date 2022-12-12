@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light shadow" style="background-color:097969;">
 
-    <h2 class="p-2 text-white" style="font-size:23px; font-weight:400;">IPT Final Project</h2>
+    <h2 class="p-2 text-white" style="font-size:23px; font-weight:400; margin-left:10px;">IPT Final Project</h2>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -18,10 +18,7 @@
 
             @role('admin')
                 <span class="nav-line"></span>
-                {{-- <li class="nav-item">
-                    <a class="nav-link text-white {{ 'contact' == request()->path() ? 'active' : '' }}"
-                        href="{{ '/contact' }}">Contacts</a>
-                </li> --}}
+
                 <span class="nav-line"></span>
 
                 <span class="nav-line"></span>
