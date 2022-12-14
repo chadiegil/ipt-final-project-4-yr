@@ -42,11 +42,11 @@
                                 href="{{ route('admin.roles.index') }}">Roles</a>
                         </li>
                         <span class="nav-line"></span>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a style="margin-left: 20px"
                                 class="nav-link text-dark {{ 'admin/permissions' == request()->path() ? 'active' : '' }}"
                                 href="{{ route('admin.permissions.index') }}">Permissions</a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a style="margin-left: 20px"
                                 class="nav-link text-dark {{ 'admin/users' == request()->path() ? 'active' : '' }}"
@@ -62,20 +62,27 @@
 
                 </div>
             @endrole
-            <li class="nav-item">
-                <a class="nav-link text-light" href="{{ '/logout' }}">Sign out</a>
-            </li>
-            <li>
-                <div class="container d-flex align-items-center justify-content-between">
-                    <img class="card" style="border-radius: 50%; width: 40px;" id="pf1"
-                        src=" {{ Auth::user()->gender === 'Male' ? asset('images/man.png') : asset('images/woman.png') }}"
-                        alt="photo">
-                    <h4 class="mt-3 text-center"
-                        style="font-size: 15px; color:white; margin-bottom: 14px; margin-left:4px;">
+
+            <div class="container d-flex align-items-center justify-content-center">
+                <img class="card" style="border-radius: 50%; width: 40px;" id="pf1"
+                    src=" {{ Auth::user()->gender === 'Male' ? asset('images/man.png') : asset('images/woman.png') }}"
+                    alt="photo">
+                <div class="dropdown ">
+
+                    <a class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ Auth::user()->name }}
-                    </h4>
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" id="select3">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/logout' }}">Sign out</a>
+                        </li>
+                    </div>
+
                 </div>
-            </li>
+            </div>
+
     </div>
 </nav>
 

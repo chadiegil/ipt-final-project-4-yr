@@ -5,7 +5,7 @@
 @section('title', 'Dashboard')
 
 @section('content')
-    <div class="container ">
+    <div class="container">
         <div class="content " style="position: relative; margin-left: 300px;">
             <div class="row mt-5 text-center">
                 <div class="col-md-5 mb-2">

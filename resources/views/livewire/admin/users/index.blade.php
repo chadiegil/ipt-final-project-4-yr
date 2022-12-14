@@ -2,7 +2,7 @@
     <div class="container mt-2">
         <div class="container d-flex justify-content-between mt-2">
 
-            <h1 style="font-size: 25px; font-weight: 400;">Users</h1>
+            <h1 style="font-size: 25px; font-weight: 400;color:white">Users</h1>
             @include('livewire.modals.admin-modal')
             @if (session('message'))
                 <div class="alert alert-success text-black text-center" id="messagee">{{ session('message') }}</div>
@@ -11,7 +11,7 @@
                 wire:model.lazy="search">
         </div>
         <div class="card-body">
-            <table class="table table-striped shadow text-center">
+            <table class="table shadow text-center">
                 <thead style="background-color: #2c70b1; color:white;">
                     <tr>
                         <th>Name</th>
@@ -22,7 +22,7 @@
                 </thead>
                 <tbody>
                     @foreach ($users as $user)
-                        <tr>
+                        <tr class="text-white">
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->gender }}</td>

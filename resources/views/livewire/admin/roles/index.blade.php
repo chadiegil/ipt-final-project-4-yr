@@ -1,7 +1,7 @@
 <div>
     <div class="container mt-2">
         <div class="container d-flex align-items-center justify-content-between ">
-            <h1 style="font-weight: 400; font-size:25px;">Roles</h1>
+            <h1 style="font-weight: 400; font-size:25px; color:white">Roles</h1>
             @include('livewire.modals.admin-modal')
             @if (session('message'))
                 <div class="alert alert-success text-black text-center" id="messagee">{{ session('message') }}</div>
@@ -15,7 +15,7 @@
         </div>
 
         <div class="card-body">
-            <table class="table table-striped shadow-lg text-center">
+            <table class="table shadow-lg text-center">
                 <thead style="background-color: #2c70b1; color:white;">
                     <tr>
                         <th>Role</th>
@@ -24,7 +24,7 @@
                 </thead>
                 <tbody>
                     @foreach ($roles as $role)
-                        <tr>
+                        <tr class="text-white">
                             <td>{{ $role->name }}</td>
                             <td>
                                 <a href="" class="btn btn-warning" id="ic" title="Edit"

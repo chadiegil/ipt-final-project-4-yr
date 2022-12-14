@@ -71,11 +71,11 @@
 
 <style>
     .f1 {
-        background-color: lightpink;
+        background-color: white;
     }
 
     .m1 {
-        background-color: rgb(227, 233, 235);
+        background-color: white;
     }
 
     #text-area {

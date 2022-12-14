@@ -13,10 +13,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
+    <style>
+        body {
+            background: #34e89e;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0f3443, #34e89e);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0f3443, #34e89e);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    </style>
+
     @livewireStyles
 </head>
 
-<body class="bg-light" style=" overflow:auto">
+<body class="bg-secondary" style=" overflow:auto">
     @yield('content')
 
     @livewire('livewire-ui-modal')
